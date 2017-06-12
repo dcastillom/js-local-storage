@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Local Storage</title>
+  <script type="text/javascript" src="./index.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+  <form name="contact">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+
+    <label for="name">Phone</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="name">Email</label>
+    <input type="text" id="email" name="email">
+
+    <div class="buttons">
+      <button type="button" onclick="searchContact()">Search contact</button>
+      <button type="button" onclick="saveContact()">Save contact</button>
+      <button type="button" onclick="getContacts()">Get contacts</button>
+      <button type="button" onclick="dropAllContacts()">Drop all contacts</button>
+    </div>
+
+    <div id="msg-container"></div>
+
+    <div id="contacts-container"></div>
+
+  </form>
+</body>
+
+</html>
